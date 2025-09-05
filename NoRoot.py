@@ -263,7 +263,7 @@ class TCPSYNHandler(ProtocolHandler):
         while not self.stop_event.is_set():
             try:
                 # Maintain connection pool
-                if len(self.connection_pool) < self.max_pool_size):
+                if len(self.connection_pool) < self.max_pool_size:
                     conn = await self._create_connection()
                     if conn:
                         self.connection_pool.append(conn)
