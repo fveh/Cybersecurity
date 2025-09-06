@@ -797,4 +797,4 @@ def main():
 
 if __name__ == "__main__":
     # Maximum intensity execution
-    main() await writer.
+    main()
